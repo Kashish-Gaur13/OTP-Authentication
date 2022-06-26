@@ -56,6 +56,7 @@ class App extends React.Component {
         console.log(JSON.stringify(user))
         alert("User is verified")
         // ...
+        window.location.pathname="/redirect.html"
       }).catch((error) => {
         // User couldn't sign in (bad verification code?)
         // ...
