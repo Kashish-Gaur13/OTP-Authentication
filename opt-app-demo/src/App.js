@@ -62,7 +62,9 @@ class App extends React.Component {
         // ...
   });
   }
-  //create HTML form and then integrate with OTP 
+  //create HTML form and then integrate with OTP. render func takes two arguments html code and html element
+  // its purpose is to display the specified html code inside the html element
+
   render(){
     return (
       <div> 
