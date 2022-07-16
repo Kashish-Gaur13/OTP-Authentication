@@ -10,6 +10,7 @@ class App extends React.Component {
         [name] : value
       })
   }
+  //whatever values we enter in mobile and otp it will create one state and store value inside it
   //We first enable phone number sign-in for our firebase project
   //then we set up the recaptcha. so we create a method as configureCaptcha
   configureCaptcha = () =>{
@@ -60,6 +61,7 @@ class App extends React.Component {
       }).catch((error) => {
         // User couldn't sign in (bad verification code?)
         // ...
+        alert("user not verified")
   });
   }
   //create HTML form and then integrate with OTP. render func takes two arguments html code and html element
